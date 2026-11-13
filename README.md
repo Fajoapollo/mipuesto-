@@ -1,18 +1,19 @@
 # MiPuesto
 
-Página web sencilla para mostrar productos de pequeños comerciantes peruanos.
+Proyecto personal de IHC y Tecnologías Móviles. Página sencilla para promover pequeños comercios peruanos.
 
-## Archivos
-- `index.html`: estructura de la web y seis productos de ejemplo.
-- `styles.css`: diseño con un solo tipo de letra y colores verdes.
-- `script.js`: buscador y formulario de publicaciones de demostración.
+## Requisitos cumplidos
+- Propósito y problema explicado en **Nosotros**.
+- Menú horizontal en la parte superior y menú vertical lateral.
+- Diseño responsive con menú hamburguesa en celulares.
+- Sección con una imagen sencilla (`mercado.svg`).
+- Sección con video de YouTube sobre emprendimiento.
+- Formulario con lista desplegable (`select`) y botones de radio (`radio`).
+
+## Tecnologías
+HTML, CSS y JavaScript básico. Sin frameworks ni base de datos.
 
 ## Uso
-Abre `index.html` en un navegador. No se necesita instalar nada.
+Abre `index.html` en el navegador. Para publicarlo en GitHub Pages, ve a Settings > Pages y usa la rama `main` y la carpeta `/(root)`.
 
-## GitHub Pages
-1. Crea un repositorio público en GitHub.
-2. Sube los cuatro archivos a la raíz del repositorio.
-3. En Settings > Pages, selecciona Deploy from a branch, main y /(root).
-
-**Nota:** Las publicaciones añadidas solo permanecen mientras la página esté abierta; no se guardan en un servidor. Los productos y precios son ejemplos.
+**Importante:** los productos son ejemplos; los publicados en el formulario solo se ven durante la visita y no se guardan. La historia familiar es un texto modelo que puedes adaptar.
