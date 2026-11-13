@@ -1,49 +1,66 @@
-/* MiPuesto: diseño simple con una sola tipografía */
+/* Diseño sencillo: Arial, verde y blanco */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: Arial, sans-serif; color: #28342d; line-height: 1.6; background: #fff; }
-.contenedor { width: 90%; max-width: 1000px; margin: auto; }
-header { background: #fff; border-bottom: 1px solid #e7ebe6; }
-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 17px 0; }
+body { margin: 0; font-family: Arial, sans-serif; color: #26382a; line-height: 1.6; }
+.contenedor { width: 92%; max-width: 1050px; margin: auto; }
 a { color: inherit; text-decoration: none; }
-.logo { color: #247347; font-size: 25px; font-weight: bold; letter-spacing: -.5px; }
-.menu { display: flex; flex-wrap: wrap; gap: 21px; font-size: 14px; }
-.menu a { padding: 5px 0; }
-.menu a:hover { color: #247347; }
-.bienvenida { background: #e9f3ea; padding: 78px 0; border-bottom: 1px solid #dce9dc; }
-.bienvenida .contenedor { border-left: 4px solid #2b8552; padding-left: 25px; }
-h1 { font-size: 38px; line-height: 1.2; margin: 0 0 15px; max-width: 600px; }
-h2 { font-size: 26px; margin: 0 0 10px; }
-h3 { font-size: 18px; margin: 13px 0 4px; }
+header { border-bottom: 1px solid #e0e7df; background: #fff; position: sticky; top: 0; z-index: 5; }
+.barra { display: flex; align-items: center; justify-content: space-between; min-height: 70px; }
+.logo { font-weight: bold; font-size: 23px; color: #267345; }
+.menu { display: flex; gap: 20px; font-size: 14px; }
+.menu a:hover, .lateral a:hover { color: #267345; }
+.hamburguesa { display: none; font-size: 27px; background: transparent; border: 0; cursor: pointer; color: #267345; }
+.presentacion { background: #eaf5ec; border-radius: 12px; padding: 36px; margin-top: 28px; display: flex; align-items: center; gap: 30px; }
+.presentacion > div { flex: 1; }
+.etiqueta { font-size: 12px; font-weight: bold; color: #267345; letter-spacing: 1px; }
+h1 { font-size: 36px; line-height: 1.2; margin: 10px 0; }
+h2 { font-size: 25px; margin: 0 0 10px; }
+h3 { font-size: 16px; margin: 10px 0 3px; }
 p { margin-top: 0; }
-.bienvenida p { max-width: 550px; color: #4c5c50; }
-.seccion { padding-top: 60px; padding-bottom: 60px; }
-#nosotros p { max-width: 780px; }
-.fondo-claro { background: #f7f9f7; }
-.boton { display: inline-block; margin-top: 12px; padding: 11px 20px; background: #247347; color: #fff; border: 0; border-radius: 6px; font: inherit; cursor: pointer; }
-.boton:hover { background: #195a36; }
-#buscador, form input { width: 100%; padding: 12px; border: 1px solid #cbd6cb; border-radius: 6px; font: inherit; background: #fff; }
-#buscador:focus, form input:focus { outline: 2px solid #81ae8d; outline-offset: 1px; }
-#buscador { max-width: 380px; margin: 12px 0 25px; }
-.productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.producto { background: #fff; border: 1px solid #e4e9e3; padding: 15px; border-radius: 10px; box-shadow: 0 3px 10px #183c2010; }
-.producto:hover { border-color: #b3d1b8; }
-.producto p { margin: 5px 0 10px; color: #647067; font-size: 14px; }
-.producto strong { color: #247347; font-size: 16px; }
-.imagen-simple { background: #eaf4ea; text-align: center; font-size: 52px; padding: 27px; border-radius: 7px; }
-.producto[hidden] { display: none; }
-form { max-width: 420px; }
-form label { display: block; margin-top: 14px; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
-.aviso { font-size: 13px; color: #666; margin-top: 16px; }
-footer { text-align: center; background: #e9f0e9; padding: 22px; font-size: 14px; }
+.imagen-portada { width: 39%; max-width: 360px; }
+.boton { display: inline-block; padding: 10px 19px; background: #267345; color: #fff; border: 0; border-radius: 6px; cursor: pointer; font: inherit; margin-top: 8px; }
+.boton:hover { background: #195631; }
+.contenido { display: grid; grid-template-columns: 175px 1fr; gap: 38px; margin-top: 28px; }
+.lateral { background: #f5f8f5; border: 1px solid #e5ebe5; border-radius: 8px; padding: 20px 16px; height: fit-content; position: sticky; top: 90px; }
+.lateral strong { display: block; margin-bottom: 12px; }
+.lateral a { display: block; padding: 7px 0; font-size: 14px; }
+.seccion { padding: 25px 0 35px; border-bottom: 1px solid #e8eee8; scroll-margin-top: 80px; }
+.seccion > p { color: #4d5e51; }
+#buscador, form input:not([type=radio]), select { padding: 11px; border-radius: 6px; border: 1px solid #bdccbe; font: inherit; width: 100%; background: white; }
+#buscador { max-width: 350px; margin: 7px 0 20px; }
+.productos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.tarjeta { border: 1px solid #e1e9df; border-radius: 8px; padding: 12px; background: white; }
+.tarjeta p { color: #267345; font-weight: bold; font-size: 14px; margin: 0; }
+.dibujo { background: #eff6ed; border-radius: 6px; font-size: 44px; text-align: center; padding: 17px; }
+.tarjeta[hidden] { display: none; }
+.video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #eaf5ec; border-radius: 8px; overflow: hidden; }
+.video iframe { width: 100%; height: 100%; border: 0; }
+form { max-width: 440px; }
+form > label { display: block; margin: 12px 0 5px; font-weight: bold; font-size: 14px; }
+fieldset { border: 1px solid #d8e3d9; border-radius: 6px; margin: 18px 0 8px; padding: 12px; }
+legend { font-weight: bold; font-size: 14px; }
+.opcion { display: inline-block; margin-right: 18px; font-size: 14px; }
+.nota { font-size: 13px; color: #647067; margin-top: 12px; }
+.nota a { color: #267345; text-decoration: underline; }
+.mensaje { color: #267345; margin-top: 14px; }
+footer { text-align: center; padding: 22px; margin-top: 35px; background: #edf3ed; font-size: 14px; }
 footer p { margin: 0; }
-@media (max-width: 700px) {
-  .productos { grid-template-columns: repeat(2, 1fr); }
-  h1 { font-size: 30px; }
-  .bienvenida { padding: 55px 0; }
-  .menu { gap: 13px; }
+@media (max-width: 760px) {
+  .hamburguesa { display: block; }
+  .barra { flex-wrap: wrap; }
+  .menu { display: none; width: 100%; flex-direction: column; gap: 0; padding: 0 0 12px; }
+  .menu.abierto { display: flex; }
+  .menu a { padding: 10px; border-top: 1px solid #eef1ee; }
+  .contenido { grid-template-columns: 1fr; gap: 0; }
+  .lateral { position: static; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  .lateral strong { margin: 0; width: 100%; }
+  .lateral a { padding: 0; }
+  .presentacion { padding: 24px; }
+  h1 { font-size: 29px; }
 }
-@media (max-width: 450px) {
-  .productos { grid-template-columns: 1fr; }
-  .seccion { padding-top: 45px; padding-bottom: 45px; }
+@media (max-width: 520px) {
+  .presentacion { flex-direction: column; text-align: left; }
+  .imagen-portada { width: 80%; }
+  .productos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+@media (max-width: 360px) { .productos { grid-template-columns: 1fr; } }
