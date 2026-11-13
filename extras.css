@@ -1,0 +1,7 @@
+/* Segunda hoja de estilos: pequeños detalles del proyecto */
+/* Solo el título de portada usa una fuente de Google Fonts. */
+.presentacion h1 { font-family: 'Nunito', Arial, sans-serif; }
+.check { display: block; margin: 18px 0 10px; }
+.check input { accent-color: #267345; }
+footer a { text-decoration: underline; color: #267345; }
+footer p + p { margin-top: 6px; }
