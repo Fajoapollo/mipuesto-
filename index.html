@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MiPuesto | Tu mercado cerca de ti</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="extras.css">
 </head>
 <body>
 <header>
@@ -25,7 +29,7 @@
       <p class="etiqueta">COMERCIO LOCAL EN PERÚ</p>
       <h1>Lo mejor de tu barrio, en un solo lugar</h1>
       <p>Encuentra productos de pequeños comerciantes y apoya a las familias emprendedoras.</p>
-      <a href="#explorar" class="boton">Explorar productos</a>
+      <a href="#explorar" target="_self" class="boton">Explorar productos</a>
     </div>
     <img src="mercado.svg" alt="Ilustración sencilla de un puesto de mercado con frutas" class="imagen-portada">
   </section>
@@ -90,6 +94,7 @@
             <label class="opcion"><input type="radio" name="entrega" value="Recojo en tienda" required> Recojo en tienda</label>
             <label class="opcion"><input type="radio" name="entrega" value="Delivery"> Delivery</label>
           </fieldset>
+          <label class="opcion check"><input type="checkbox" id="confirmacion" required> Confirmo que los datos del producto son correctos.</label>
           <button class="boton" type="submit">Publicar</button>
         </form>
         <p id="mensaje" role="status" class="mensaje"></p>
@@ -98,7 +103,7 @@
     </div>
   </div>
 </main>
-<footer><p>© 2026 MiPuesto · Apoyamos el comercio local</p></footer>
+<footer><p>© 2026 MiPuesto · Apoyamos el comercio local</p><p><a href="https://leyes.congreso.gob.pe/documentos/leyes/29733.pdf" target="_blank" rel="noopener noreferrer">Ley N.º 29733 de Protección de Datos Personales (PDF)</a></p></footer>
 <script src="script.js"></script>
 </body>
 </html>
