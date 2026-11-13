@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiPuesto | Comercio local</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="contenedor">
+      <a class="logo" href="#inicio">MiPuesto</a>
+      <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#explorar">Explorar</a>
+        <a href="#publicaciones">Publicaciones</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="bienvenida">
+      <div class="contenedor">
+        <h1>Tu mercado de barrio, en internet</h1>
+        <p>Encuentra productos cerca de ti y apoya a los pequeños negocios de tu comunidad.</p>
+        <a href="#explorar" class="boton">Ver productos</a>
+      </div>
+    </section>
+    <section id="nosotros" class="contenedor seccion">
+      <h2>Nosotros</h2>
+      <p>MiPuesto nació de una experiencia familiar. Mi familia comenzó con un pequeño negocio y no siempre fue fácil conseguir clientes nuevos. Muchas veces nuestros productos solo eran conocidos por las personas que pasaban por el puesto.</p>
+      <p>Por eso creamos esta página: un espacio sencillo donde los comerciantes puedan mostrar lo que venden y los vecinos puedan encontrarlo.</p>
+    </section>
+    <section id="explorar" class="seccion fondo-claro">
+      <div class="contenedor">
+        <h2>Explorar productos</h2>
+        <p>Descubre lo que ofrecen los negocios de nuestro barrio.</p>
+        <input type="text" id="buscador" placeholder="Buscar un producto..." aria-label="Buscar productos">
+        <div class="productos" id="lista-productos">
+          <article class="producto" data-nombre="frutas frescas"><div class="imagen-simple">🍎</div><h3>Frutas frescas</h3><p>Frutas de temporada.</p><strong>Desde S/ 5</strong></article>
+          <article class="producto" data-nombre="verduras"><div class="imagen-simple">🥬</div><h3>Verduras</h3><p>Verduras para tu cocina.</p><strong>Desde S/ 3</strong></article>
+          <article class="producto" data-nombre="ropa casual"><div class="imagen-simple">👕</div><h3>Ropa casual</h3><p>Prendas para todos los días.</p><strong>Desde S/ 20</strong></article>
+          <article class="producto" data-nombre="pan artesanal panadería"><div class="imagen-simple">🥖</div><h3>Pan artesanal</h3><p>Pan recién preparado.</p><strong>Desde S/ 2</strong></article>
+          <article class="producto" data-nombre="plantas macetas jardín"><div class="imagen-simple">🪴</div><h3>Plantas y macetas</h3><p>Para decorar tu hogar.</p><strong>Desde S/ 12</strong></article>
+          <article class="producto" data-nombre="accesorios pulseras artesanales"><div class="imagen-simple">📿</div><h3>Accesorios artesanales</h3><p>Detalles hechos a mano.</p><strong>Desde S/ 10</strong></article>
+        </div>
+        <p id="sin-resultados" hidden>No encontramos productos con ese nombre.</p>
+      </div>
+    </section>
+    <section id="publicaciones" class="contenedor seccion">
+      <h2>Publicaciones</h2>
+      <p>¿Tienes un pequeño negocio? Completa este formulario para mostrar un producto en esta página.</p>
+      <form id="formulario">
+        <label for="nombre">Nombre del producto</label>
+        <input id="nombre" type="text" required maxlength="40" placeholder="Ej. Pan artesanal">
+        <label for="precio">Precio (S/)</label>
+        <input id="precio" type="number" min="0.1" step="0.1" required placeholder="Ej. 8">
+        <button type="submit" class="boton">Publicar producto</button>
+      </form>
+      <p class="aviso">Demostración: las publicaciones añadidas se muestran solo durante esta visita y no se guardan en internet.</p>
+    </section>
+  </main>
+  <footer><p>© 2026 MiPuesto · Apoyando el comercio local en Perú</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
