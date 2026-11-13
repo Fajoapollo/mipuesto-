@@ -8,7 +8,11 @@ Proyecto personal de IHC y Tecnologías Móviles. Página sencilla para promover
 - Diseño responsive con menú hamburguesa en celulares.
 - Sección con una imagen sencilla (`mercado.svg`).
 - Sección con video de YouTube sobre emprendimiento.
-- Formulario con lista desplegable (`select`) y botones de radio (`radio`).
+- Formulario con lista desplegable (`select`), botones de radio (`radio`) y casilla de verificación (`checkbox`).
+- Una sección con tipografía Nunito de Google Fonts; el resto continúa con Arial.
+- Enlace interno con `target="_self"` y enlace al PDF oficial con `target="_blank"`.
+- Dos hojas de estilo: `styles.css` y `extras.css`.
+- Pie de página con enlace al PDF oficial de la Ley N.º 29733.
 
 ## Tecnologías
 HTML, CSS y JavaScript básico. Sin frameworks ni base de datos.
