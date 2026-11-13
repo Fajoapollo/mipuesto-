@@ -1,0 +1,49 @@
+/* MiPuesto: diseño simple con una sola tipografía */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #28342d; line-height: 1.6; background: #fff; }
+.contenedor { width: 90%; max-width: 1000px; margin: auto; }
+header { background: #fff; border-bottom: 1px solid #e7ebe6; }
+nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 17px 0; }
+a { color: inherit; text-decoration: none; }
+.logo { color: #247347; font-size: 25px; font-weight: bold; letter-spacing: -.5px; }
+.menu { display: flex; flex-wrap: wrap; gap: 21px; font-size: 14px; }
+.menu a { padding: 5px 0; }
+.menu a:hover { color: #247347; }
+.bienvenida { background: #e9f3ea; padding: 78px 0; border-bottom: 1px solid #dce9dc; }
+.bienvenida .contenedor { border-left: 4px solid #2b8552; padding-left: 25px; }
+h1 { font-size: 38px; line-height: 1.2; margin: 0 0 15px; max-width: 600px; }
+h2 { font-size: 26px; margin: 0 0 10px; }
+h3 { font-size: 18px; margin: 13px 0 4px; }
+p { margin-top: 0; }
+.bienvenida p { max-width: 550px; color: #4c5c50; }
+.seccion { padding-top: 60px; padding-bottom: 60px; }
+#nosotros p { max-width: 780px; }
+.fondo-claro { background: #f7f9f7; }
+.boton { display: inline-block; margin-top: 12px; padding: 11px 20px; background: #247347; color: #fff; border: 0; border-radius: 6px; font: inherit; cursor: pointer; }
+.boton:hover { background: #195a36; }
+#buscador, form input { width: 100%; padding: 12px; border: 1px solid #cbd6cb; border-radius: 6px; font: inherit; background: #fff; }
+#buscador:focus, form input:focus { outline: 2px solid #81ae8d; outline-offset: 1px; }
+#buscador { max-width: 380px; margin: 12px 0 25px; }
+.productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.producto { background: #fff; border: 1px solid #e4e9e3; padding: 15px; border-radius: 10px; box-shadow: 0 3px 10px #183c2010; }
+.producto:hover { border-color: #b3d1b8; }
+.producto p { margin: 5px 0 10px; color: #647067; font-size: 14px; }
+.producto strong { color: #247347; font-size: 16px; }
+.imagen-simple { background: #eaf4ea; text-align: center; font-size: 52px; padding: 27px; border-radius: 7px; }
+.producto[hidden] { display: none; }
+form { max-width: 420px; }
+form label { display: block; margin-top: 14px; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+.aviso { font-size: 13px; color: #666; margin-top: 16px; }
+footer { text-align: center; background: #e9f0e9; padding: 22px; font-size: 14px; }
+footer p { margin: 0; }
+@media (max-width: 700px) {
+  .productos { grid-template-columns: repeat(2, 1fr); }
+  h1 { font-size: 30px; }
+  .bienvenida { padding: 55px 0; }
+  .menu { gap: 13px; }
+}
+@media (max-width: 450px) {
+  .productos { grid-template-columns: 1fr; }
+  .seccion { padding-top: 45px; padding-bottom: 45px; }
+}
